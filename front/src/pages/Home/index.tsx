@@ -17,13 +17,14 @@ const Home: React.FC = () => {
         sx={{
           display: 'flex',
           minHeight: '80vh',
+          width:'50%',
           minWidth: '40wh', 
           flexDirection: 'column',
-          justifyContent: 'center',
-          justifyItems:'center'
-
+          justifyContent: 'space-around',
+          alignItems:'center'
         }}>
         <CreateRoom />
+        
         <EnterRoom />
       </Box>
     </Container>

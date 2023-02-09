@@ -1,5 +1,5 @@
-import { Box, Button, IconButton, TextField, Typography } from "@mui/material";
-import {Visibility, VisibilityOff} from '@mui/icons-material';
+import { Box, Button, FormControl, IconButton, InputAdornment, InputLabel, OutlinedInput, TextField, Typography } from "@mui/material";
+import { Visibility, VisibilityOff } from '@mui/icons-material';
 
 import { useState } from "react";
 
@@ -9,8 +9,6 @@ const EnterRoom = () => {
 
   const [roomCode, setRoomCode] = useState("");
   const [roomPass, setRoomPass] = useState("");
-
-
 
   const handleShowPass = () => setShowPass(!showPass);
 
@@ -25,21 +23,36 @@ const EnterRoom = () => {
       </Typography>
       <TextField
         size="small"
-        label="Nome da Sala:"
+        label="Código da Sala:"
+        role="code-box"
         value={roomCode}
         onChange={e => setRoomCode(e.currentTarget.value)}
       />
-      <TextField
-        size="small"
-        label="Senha de acesso:"
-        value={roomPass}
-        type="password"
-        onChange={e => setRoomPass(e.currentTarget.value)}
-      >
-          {showPass? <VisibilityOff/> : <Visibility/>}
 
-      </TextField>
-      <Button type="submit" variant="contained">Entrar</Button>
+      <FormControl variant="outlined">
+        <InputLabel htmlFor="adornment-pass">Senha</InputLabel>
+        <OutlinedInput
+          id="adornment-pass"
+          label="Senha"
+          role="pass-box"
+          type={showPass ? 'text' : 'password'}
+          size="small"
+          value={roomPass}
+          onChange={e => setRoomPass(e.currentTarget.value)}
+          endAdornment={
+            <InputAdornment position="end">
+              <IconButton
+                role="show-pass-btn"
+                onClick={handleShowPass}
+                edge="end"
+              >
+                {showPass ? <VisibilityOff /> : <Visibility />}
+              </IconButton>
+            </InputAdornment>
+          }
+        />
+      </FormControl>
+      <Button type="submit" role="enter-btn" size="small" variant="contained">Entrar</Button>
     </Box>
   );
 }
