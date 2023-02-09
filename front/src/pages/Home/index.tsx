@@ -1,6 +1,7 @@
 import { Box, Container } from '@mui/material';
 import CreateRoom from './CreateRoom';
 import EnterRoom from './EnterRoom';
+import ListRoom from './ListRoom';
 
 const Home: React.FC = () => {
   return (
@@ -11,7 +12,24 @@ const Home: React.FC = () => {
         flexDirection: 'row',
         justifyItems: 'center'
       }}>
-      <Box width="50%"></Box>
+      <Box width="50%" pt="32px">
+        <ListRoom rooms={[
+          {
+            code:"JRXYQH",
+            name:"Caçadores de Aventuras",
+            permission: 'private',
+            players:[],
+            status: 'playing'
+          },
+          {
+            code:"CPQKDL",
+            name:"Guerreiros da baguncinha",
+            permission: 'public',
+            players:[],
+            status: 'playing'
+          },
+        ]}/>
+      </Box>
       <Box
         component="section"
         sx={{

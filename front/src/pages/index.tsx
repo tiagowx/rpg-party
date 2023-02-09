@@ -7,6 +7,7 @@ const Pages = () => {
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='/room/:code'/>
 
       </Routes>
     </BrowserRouter>
