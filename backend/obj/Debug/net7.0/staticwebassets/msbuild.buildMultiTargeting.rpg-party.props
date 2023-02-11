@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/rpg-party.props" />
+</Project>

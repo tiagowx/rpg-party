@@ -33,9 +33,9 @@ const CreateRoom: FC = () => {
         variant="outlined"
         role="pass-box"
         >
-        <InputLabel htmlFor="adornment-pass">Senha</InputLabel>
+        <InputLabel htmlFor="adornment-crt-pass">Senha</InputLabel>
         <OutlinedInput
-          id="adornment-pass"
+          id="adornment-crt-pass"
           label="Senha"
           type={showPass ? 'text' : 'password'}
           size="small"
