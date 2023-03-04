@@ -1,16 +1,14 @@
 import ISkill from "./ISkill";
 import IBaseStatus from "./IStatus";
 
-interface IPlayer {
-  uuid: string;
+interface IEnemy {
   name: string;
   avatar: string;
-  tittle: string;
+  title: string;
   gameClass: number;
   level: number;
-  experience: number;
   status: IBaseStatus;
   skills: number[];
 }
 
-export default IPlayer;
+export default IEnemy;

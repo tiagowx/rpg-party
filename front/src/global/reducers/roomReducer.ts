@@ -1,5 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import IRoom from "interfaces/IRoom";
+import playerMock from "mocks/playerMock";
 
 interface roomListState {
   value: IRoom[];
@@ -17,8 +18,9 @@ export const roomListSlice = createSlice({
           code: "JRXYQH",
           name: "Caçadores de Aventuras",
           permission: "private",
-          players: [],
+          players: [playerMock],
           status: "playing",
+          consoleMessages: []
         },
         {
           code: "CPQKDL",
@@ -26,6 +28,7 @@ export const roomListSlice = createSlice({
           permission: "public",
           players: [],
           status: "playing",
+          consoleMessages: []
         },
       ];
     },
