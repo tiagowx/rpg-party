@@ -1,9 +1,10 @@
-import { Box, Paper, Typography } from "@mui/material";
+import { Box, Paper } from "@mui/material";
 import IGameController from "interfaces/IGameController";
 import playerMock from "mocks/playerMock";
 import roomMock from "mocks/roomMock";
 import { FC, useState } from "react";
 import Epic from "./Epic";
+import Referendum from "./Referendum";
 import Styles from "./styles";
 
 
@@ -25,6 +26,7 @@ const GameController: FC = () => {
         <p>{gameController.currentPlayer.name} está jogando!</p>
       </Paper>
       <Epic />
+      <Referendum />
     </Box>
   );
 };

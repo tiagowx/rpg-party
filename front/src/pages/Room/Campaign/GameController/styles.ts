@@ -5,12 +5,12 @@ const Styles: SxProps = {
   flexDirection: "column",
   justifyContent: "space-around",
   flex: 1,
+  padding: "8px",
   h4: { pb: "4px" },
   ".room-info": {
+    px: "8px",
     display: "flex",
     justifyContent: "space-between",
-    px: "8px",
-    mx: "8px",
     p: {
       fontWeight: "bold",
     },
