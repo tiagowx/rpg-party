@@ -9,6 +9,7 @@ const Campaign: React.FC = () => {
       display: 'flex',
       justifyContent:'space-around',
       width: '100vw',
+      padding: '16px',
       gap: '8px',
       overflowX: 'hidden'
     }}>

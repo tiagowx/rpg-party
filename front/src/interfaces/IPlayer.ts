@@ -1,12 +1,12 @@
 import ISkill from "./ISkill";
-import IBaseStatus from "./IStatus";
+import IBaseStatus from "./IBaseStatus";
 
 interface IPlayer {
   uuid: string;
   name: string;
   avatar: string;
-  tittle: string;
-  gameClass: number;
+  title: string;
+  gameClass: "Guerreiro" | "Mago" | "Caçador" | "Clérigo" | "Paladino" | "Drúida";
   level: number;
   experience: number;
   status: IBaseStatus;

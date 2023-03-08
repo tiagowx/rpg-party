@@ -1,8 +1,10 @@
- const playerMock = {
+import IPlayer from "interfaces/IPlayer";
+
+ const playerMock: IPlayer = {
   avatar: "",
-  name: "Tiago",
+  name: "Bot1",
   experience: 100,
-  gameClass: 2,
+  gameClass: "Drúida",
   level: 1,
   skills: [],
   status: {    
@@ -37,13 +39,11 @@
     }, 
     WIT: {
       value: 5,
-      mCrtRate: 5 / 6,
-      mAtkSpeed: 5 * 3,
       concentration: 5 * 6,
       vision: 5 * 3
     }
   },
-  tittle: "",
+  title: "",
   uuid: ""
 
 };

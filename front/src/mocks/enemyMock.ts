@@ -2,7 +2,7 @@ import IEnemy from "interfaces/IEnemy";
 
 const enemyMock: IEnemy = {
   avatar: "",
-  gameClass: 0,
+  gameClass: "Clérigo",
   level: 1,
   name: "Slime",
   skills: [],

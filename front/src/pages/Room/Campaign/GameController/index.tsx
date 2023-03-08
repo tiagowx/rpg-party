@@ -23,7 +23,7 @@ const GameController: FC = () => {
         <p>Room: {gameController.room.name}</p>
         <p>Turno: {gameController.turn}</p>
         <p>Tempo: {gameController.timer}</p>
-        <p>{gameController.currentPlayer.name} está jogando!</p>
+        <p>Fase: Batalha</p>
       </Paper>
       <Epic />
       <Referendum />

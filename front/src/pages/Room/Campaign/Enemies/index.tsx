@@ -3,12 +3,13 @@ import enemyMock from "mocks/enemyMock";
 import Enemy from "./Enemy";
 
 const Enemies: React.FC = () => {
-  const enemies = enemyMock;
+  // const enemies = enemyMock;
   return (
     <Box
       sx={{
         display: "flex",
         flexDirection: "column",
+        flex: 1,
         gap: '4px'
       }}
     >

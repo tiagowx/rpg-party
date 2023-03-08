@@ -1,11 +1,11 @@
 import ISkill from "./ISkill";
-import IBaseStatus from "./IStatus";
+import IBaseStatus from "./IBaseStatus";
 
 interface IEnemy {
   name: string;
   avatar: string;
   title: string;
-  gameClass: number;
+  gameClass: "Guerreiro" | "Mago" | "Caçador" | "Clérigo" | "Paladino" | "Drúida";
   level: number;
   status: IBaseStatus;
   skills: number[];
