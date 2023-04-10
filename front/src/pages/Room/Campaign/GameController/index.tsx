@@ -14,7 +14,8 @@ const GameController: FC = () => {
     player: playerMock,
     room: roomMock,
     timer: 0,
-    turn: 1
+    turn: 1,
+    phase: "Batalha"
   });
 
   return (
@@ -23,7 +24,7 @@ const GameController: FC = () => {
         <p>Room: {gameController.room.name}</p>
         <p>Turno: {gameController.turn}</p>
         <p>Tempo: {gameController.timer}</p>
-        <p>Fase: Batalha</p>
+        <p>Fase: {gameController.phase}</p>
       </Paper>
       <Epic />
       <Referendum />

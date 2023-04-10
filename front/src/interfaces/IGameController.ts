@@ -6,6 +6,7 @@ interface IGameController {
   turn: number;
   player: IPlayer;
   currentPlayer: IPlayer;
+  phase: "Batalha" | "Escolha" | "Referendo" | "Exploração" | "Início";
   timer: number;
 }
 

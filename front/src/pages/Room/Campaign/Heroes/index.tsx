@@ -6,7 +6,7 @@ const Heroes: React.FC = () => {
     <Box sx={{
       flex: 1,
       display: 'flex',
-      flexDirection: 'column',      
+      flexDirection: 'column',
       gap: '4px'
     }}>
       <Typography>Jogadores:</Typography>

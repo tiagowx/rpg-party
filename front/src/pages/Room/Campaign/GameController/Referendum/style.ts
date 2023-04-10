@@ -3,7 +3,6 @@ import { SxProps } from "@mui/material";
 const style: SxProps = {
   display: "flex",
   flexDirection: "column",
-  p:"16px",
   ".paper": {
     display: "flex",
     flexDirection: "column",
